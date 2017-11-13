@@ -4,8 +4,6 @@ from itertools import permutations
 
 
 class Palindrome:
-    def test_test(self,a):
-        return a
 
     def get_words(self):
        # return a list of words 
@@ -67,11 +65,12 @@ class Palindrome:
         permutedL = self.generate_permutations(words) 
         palindromes = self.look_for_palindromes(permutedL)
     
-        print "These are the possible palindromes:"
+        print "These are the palindromes:"
         if len(palindromes) == 0:
             print "  None"
         else:
-            print " ",palindromes
+            for palindrome in palindromes:
+                print " ",palindrome
 
 if __name__ == '__main__':
 

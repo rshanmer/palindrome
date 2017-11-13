@@ -8,10 +8,6 @@ class TestTestCase(unittest.TestCase):
     def setUp(self):
         self.pal = Palindrome()
 
-    def test_testtest(self):
-        result = self.pal.test_test("A")
-        self.assertTrue(result == "A")
-
     def test_generate_permutations(self):
         result = self.pal.generate_permutations("a b")
         self.assertTrue(result == ["a","b","ab","ba"])
